@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS DO PROJETO-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--JAVA SCRIPT-->
+    <script src="script.js" defer></script>
+    <!--FONTE DO PROJETO-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ONUSPRO</title>
+</head>
+<body>
+    <div class="todo-container">
+        <header>
+            <h1>PLAYERS</h1>
+        </header>
+        <form id="todo-form">
+            <p>DADOS DOS JOGADORES:</p>
+            <div class="form-control">
+                <div id="input-text">
+                <textarea  id="todo-input" placeholder="DADOS DOS PLAYERS" rows="10" cols="49">NOME:
+NICK:
+ID:
+EMAIL:
+CPF:
+NASCIMENTO:
+                </textarea>
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>EDITAR</p>
+            <div class="form-control">
+                <textarea  id="edit-dados" placeholder="EDITAR DADOS" rows="10" cols="49"></textarea>
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+             </div>
+             <button id="cancel-edit-btn">CANCELAR</button>
+
+        </form>
+        <div class="toolbar">
+            <div id="search">
+                <h3>PESQUISAR:</h3>
+                <input type="text" id="search-input" placeholder="Buscar">
+                <button id="limpar">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+            </div>
+        </div>
+        <div id="todo-list">
+            <div class="todo">
+                <h3>EDUARDO</h3>
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button> 
+                <button class="remove-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                </div>
+                <div class="todo">
+                    <h3>JEAN</h3>
+                    <button class="edit-todo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="remove-todo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
